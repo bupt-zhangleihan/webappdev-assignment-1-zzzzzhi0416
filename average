@@ -1,0 +1,9 @@
+function average(nums)
+{
+    var sum = 0;
+    for (var i = 0; i < nums.length; i++){
+        sum += nums[i];
+    }
+return sum / nums.length;
+}
+console.log(average([8,6,5,3]));
