@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to my Virtual Terrarium</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+	            font-family: helvetica, arial, sans-serif;
+            }
+
+            h1 {
+                color: #26abad;
+                text-align: center;
+            }
+
+            
+            #left-container {
+            background-color: #afe1df;
+            width: 10%;
+            left: 250px;
+            top: 0px;
+            position: absolute;
+            height: 100%;
+            padding: 10px;
+            }
+
+            #right-container {
+            background-color: #afe1df;
+            width: 10%;
+            right: 250px;
+            top: 0px;
+            position: absolute;
+            height: 100%;
+            padding: 10px;
+            }
+            .plant-holder {
+            position: relative;
+            height: 13%;
+            left: -10px;
+            }
+
+            .plant {
+            position: absolute;
+            max-width: 150%;
+            max-height: 150%;
+            z-index: 2;
+            }
+            .jar-walls {
+            height: 60%;
+            width: 30%;
+            background: #6ab6bb;
+            border-radius: 18%;
+            position: absolute;
+            bottom: 0.5%;
+            left: 35%;
+            opacity: 0.5;
+            z-index: 1;
+            }
+
+            .jar-top {
+            width: 20%;
+            height: 5%;
+            background: #1395a6;
+            position: absolute;
+            bottom: 60.5%;
+            left: 40%;
+            opacity: 0.7;
+            z-index: 1;
+            }
+
+            .jar-bottom {
+            width: 20%;
+            height: 1%;
+            background: #d1e1df;
+            position: absolute;
+            bottom: 0%;
+            left: 40%;
+            opacity: 0.7;
+            }
+
+            .dirt {
+            width: 26.5%;
+            height: 5%;
+            background: #032353;
+            position: absolute;
+            border-radius: 0 0 10rem 10rem;
+            bottom: 1%;
+            left: 36.8%;
+            opacity: 0.7;
+            z-index: -1;
+            }
+
+        </style>
+	</head>
+	<body>
+        <h1>My Terrarium</h1>
+        <div id="terrarium">
+            <div class="jar-top"></div>
+            <div class="jar-walls">
+                <div class="jar-glossy-long"></div>
+                <div class="jar-glossy-short"></div>
+            </div>
+            <div class="dirt"></div>
+            <div class="jar-bottom"></div>
+        </div>
+        <div id="page">
+            <div id="left-container" class="container">
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant1" src="./images/plant1.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant2" src="./images/plant2.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant3" src="./images/plant3.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant4" src="./images/plant4.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant5" src="./images/plant5.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant6" src="./images/plant6.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant7" src="./images/plant7.png" />
+                </div>
+            </div>
+            <div id="right-container" class="container">
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant8" src="./images/plant8.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant9" src="./images/plant9.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant10" src="./images/plant10.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant11" src="./images/plant11.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant12" src="./images/plant12.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant13" src="./images/plant13.png" />
+                </div>
+                <div class="plant-holder">
+                    <img class="plant" alt="plant" id="plant14" src="./images/plant14.png" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
