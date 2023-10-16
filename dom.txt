@@ -1,0 +1,55 @@
+Document 接口是 DOM（Document Object Model）的核心接口，它表示整个 HTML 或 XML 文档。每个 HTML 或 XML 文档都有一个与之关联的 Document 对象。这个对象为访问文档的节点和部分提供了方法和属性，使得开发者可以轻松地修改文档的结构、样式和内容。
+
+例如，考虑一个稍微复杂的网页，该网页是一个电子商务网站的页面，包含一个搜索框、一些产品列表、购物车等。在这个页面中，Document 对象可以被用来访问和操作页面的各个部分。
+
+例子：
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome to My Website</h1>
+
+<p>Search for products:</p>
+<input type="text" id="search-input">
+<button id="search-button">Search</button>
+
+<div id="product-list">
+  <h2>Product 1</h2>
+  <p>Price: $10</p>
+  <button>Add to cart</button>
+  <h2>Product 2</h2>
+  <p>Price: $15</p>
+  <button>Add to cart</button>
+</div>
+
+<div id="cart">
+  <h2>Your cart</h2>
+  <p id="cart-items"></p>
+</div>
+
+<script>
+// Get the DOM elements
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
+const productList = document.getElementById("product-list");
+const cart = document.getElementById("cart");
+const cartItems = document.getElementById("cart-items");
+
+// Add event listeners to the search button and cart items
+searchButton.addEventListener("click", function() {
+  // Perform a search based on the value of the search input field
+  const searchValue = searchInput.value;
+  // ... (perform the search and update the product list)
+});
+
+productList.addEventListener("click", function(event) {
+  // Add the clicked product to the cart and update the cart items
+  const clickedProduct = event.target.parentNode; // assumes the clicked item is a child of the <product-list> element
+  // ... (add the product to the cart and update the cartItems text)
+});
+</script>
+
+</body>
+</html>
+
+这个例子中使用 Document 接口获取了页面上的多个元素（通过它们的 ID），然后为搜索按钮和购物车列表项添加了事件监听器。这些监听器在相应的事件发生时执行一些操作，如执行搜索或添加产品到购物车。这些操作通常涉及到获取和修改元素的属性或内容，如 `innerHTML`、`innerText` 或 `value`，或者对元素进行增删改查等操作。
