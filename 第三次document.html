@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome to My Website</h1>
+
+<p>Search for products:</p>
+<input type="text" id="search-input">
+<button id="search-button">Search</button>
+
+<div id="product-list">
+  <h2>Product 1</h2>
+  <p>Price: $10</p>
+  <button>Add to cart</button>
+  <h2>Product 2</h2>
+  <p>Price: $15</p>
+  <button>Add to cart</button>
+</div>
+
+<div id="cart">
+  <h2>Your cart</h2>
+  <p id="cart-items"></p>
+</div>
+
+<script>
+// Get the DOM elements
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
+const productList = document.getElementById("product-list");
+const cart = document.getElementById("cart");
+const cartItems = document.getElementById("cart-items");
+
+// Add event listeners to the search button and cart items
+searchButton.addEventListener("click", function() {
+  // Perform a search based on the value of the search input field
+  const searchValue = searchInput.value;
+  // ... (perform the search and update the product list)
+});
+
+productList.addEventListener("click", function(event) {
+  // Add the clicked product to the cart and update the cart items
+  const clickedProduct = event.target.parentNode; // assumes the clicked item is a child of the <product-list> element
+  // ... (add the product to the cart and update the cartItems text)
+});
+</script>
+
+</body>
+</html>
